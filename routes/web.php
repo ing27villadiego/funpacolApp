@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('zonas/{slug}/{id}', ['as' => 'zone', 'uses' => 'process\CitiesController@zone']);

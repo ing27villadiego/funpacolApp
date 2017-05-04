@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::get('/user', function (Request $request) {
     return ['user'=>'ing jeaffer'];
 });
+
+
+Route::get('cities/{slug}/{id}', ['as' => 'city', 'uses' => 'process\CitiesController@zone']);
